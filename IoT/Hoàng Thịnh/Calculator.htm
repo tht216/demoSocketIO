@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type "text/css" href="./MenuBar.css">
+    <link rel="stylesheet" type "text/css" href="./Converter.css">
+    <link rel="stylesheet" type "text/css" href="./Standard.css">
+    <title>Calculator</title>
+
+</head>
+
+<body>
+    <!-- Menu bar here -->
+    <div class="topnav dropdown">
+        <div class="icon container-content">&#9776;
+            <div class="dropdown-content">
+                <button class="tablink" onclick="openPage('Calculator', this, '#333333')">Calculator</button>
+                <button class="tablink" onclick="openPage('Converter', this, '#333333')">Converter</button>
+            </div>
+
+        </div>
+    </div>
+    <div id="Calculator"></div>
+    <div id="Converter"></div>
+
+    <!-- Standard Code here -->
+    <div class="container">
+        <div class="Standard-container">
+            <div class="output">
+                <p class="previous1" id="previous"></p>
+                <p class="current1" id="current">0</p>
+            </div>
+            <button id="percent" class="operator">%</button>
+            <button id="clear-entry" class="operator">CE</button>
+            <button id="clear" class="operator">C</button>
+            <button id="delete" class="operator">DEL</button>
+            <button id="1/" class="operator">&#185;&#8725;&#8339;</button>
+            <button id="sqr(" class="operator">x&#178;</button>
+            <button id="sqrt(" class="operator">&#178;&radic;x</button>
+            <button id="÷" class="operator">÷</button>
+            <button id="7" class="number">7</button>
+            <button id="8" class="number">8</button>
+            <button id="9" class="number">9</button>
+            <button id="×" class="operator">×</button>
+            <button id="4" class="number">4</button>
+            <button id="5" class="number">5</button>
+            <button id="6" class="number">6</button>
+            <button id="-" class="operator">-</button>
+            <button id="1" class="number">1</button>
+            <button id="2" class="number">2</button>
+            <button id="3" class="number">3</button>
+            <button id="+" class="operator">+</button>
+            <button id="-" class="number">⁺⁄₋</button>
+            <button id="0" class="number">0</button>
+            <button id="." class="number">.</button>
+            <button id="=" class="operator equals">&equals;</button>
+        </div>
+
+
+    </div>
+
+    <!-- Length Code here -->
+    <div class="container-converter">
+        <div class="mainboard">
+            <div>
+                <div class="board1">
+                    <div class="title container-content">0</div>
+                    <div class="dropdown title" style="font-size: 20px; color: white;">Centimeters
+                        <div class="dropdown-content">
+                            <button class="tabconvert" onclick="">Inches</button>
+                            <button class="tabconvert" onclick="">Kilometers</button>
+                            <button class="tabconvert" onclick="">Meters</button>
+                            <button class="tabconvert" onclick="">Milimeters</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="board2">
+                    <div class="title container-content">0</div>
+                    <div class="dropdown title" style="font-size: 20px; color: white;">Inches
+                        <div class="dropdown-content">
+                            <button class="tabconvert" onclick="">Inches</button>
+                            <button class="tabconvert" onclick="">Kilometers</button>
+                            <button class="tabconvert" onclick="">Meters</button>
+                            <button class="tabconvert" onclick="">Milimeters</button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="MenuBar.js"></script>
+    <script src="Converter.js"></script>
+    <script src="Standard.js"></script>
+</body>
+
+</html>
